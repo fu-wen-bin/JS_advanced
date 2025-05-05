@@ -24,7 +24,7 @@ const msg = {
 
 // 需求1： 请将以上 msg 对象  采用对象解构的方式 只选出 data 方面后面使用渲染页面
 // 1.1 选出 data 方便后面使用渲染页面
-const { data } = msg
+const { data } = msg  //只选择对象数组出来
 console.log(data)
 
 // 需求2： 上面 msg 是后台传递过来的数据，我们需要把 data 选出当做参数传递给 函数
