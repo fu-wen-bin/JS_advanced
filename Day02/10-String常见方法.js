@@ -10,7 +10,7 @@ console.log(arr1)
 // 2.1 如果省略 结束的索引号，默认取到最后
 // 2.2 结束的索引号不包含想要截取的部分
 const str3 = '今天又要做核酸了'
-console.log(str3.substring(5, 7))
+console.log(str3.substring(5, 7))  //截取索引为 5 - 7 的数组元素返回
 
 // 3. startsWith 判断是不是以某个字符开头
 const str4 = 'pink老师上课中'
