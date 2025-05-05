@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<script>
+  // function Object() {}
+  console.log(Object.prototype)
+  console.log(Object.prototype.__proto__)
+
+  function Person () {
+
+  }
+
+  const ldh = new Person()
+  console.log(ldh.__proto__ === Person.prototype)
+  console.log(Person.prototype.__proto__ === Object.prototype)
+
+  // instanceof 可以用于检测构造函数的 prototype 属性是否出现在，某个实例对象的原型链上
+  console.log(ldh instanceof Person)
+  console.log(ldh instanceof Object)
+  console.log(ldh instanceof Array)  //ldh 不在数组的原型链上
+  console.log([1, 2, 3] instanceof Array)
+  console.log(Array instanceof Object)
+</script>
+</body>
+
+</html>
