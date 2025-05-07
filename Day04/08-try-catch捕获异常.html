@@ -11,7 +11,7 @@
 <body>
   <p>123</p>
   <script>
-    function fn() {
+    function fn () {
       try {
         // 可能发送错误的代码 要写到 try
         const p = document.querySelector('.p')  //标签不需要加点
@@ -22,13 +22,13 @@
         throw new Error('你看看，选择器错误了吧')
         // 需要加return 中断程序
         // return
-      }
-      finally {
+      } finally {
         // 不管你程序对不对，一定会执行的代码
         alert('弹出对话框')
       }
       console.log(11)
     }
+
     fn()
   </script>
 </body>

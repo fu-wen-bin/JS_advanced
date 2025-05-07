@@ -19,37 +19,37 @@
 </head>
 
 <body>
-<div class="box"></div>
-<script>
-  const box = document.querySelector('.box')
-  let i = 1  // 让这个变量++
-  // 鼠标移动函数
-  function mouseMove () {
-    box.innerHTML = ++i
-    // 如果里面存在大量操作 dom 的情况，可能会卡顿
-  }
-
-  // 防抖函数
-  function debounce (fn, t) {
-    let timeId
-    // 返回一个匿名函数
-    return function () {
-      // 如果有定时器就清除
-      if (timeId) clearTimeout(timeId)
-      // 开启定时器 500
-      timeId = setTimeout(function () {
-        fn()
-      }, t)
+  <div class="box"></div>
+  <script>
+    const box = document.querySelector('.box')
+    let i = 1  // 让这个变量++
+    // 鼠标移动函数
+    function mouseMove () {
+      box.innerHTML = ++i
+      // 如果里面存在大量操作 dom 的情况，可能会卡顿
     }
-  }
 
-  // box.addEventListener('mousemove', mouseMove)
-  box.addEventListener('mousemove', debounce(mouseMove, 500))
+    // 防抖函数
+    function debounce (fn, t) {
+      let timeId
+      // 返回一个匿名函数
+      return function () {
+        // 如果有定时器就清除
+        if (timeId) clearTimeout(timeId)
+        // 开启定时器 500
+        timeId = setTimeout(function () {
+          fn()
+        }, t)
+      }
+    }
 
-  //debounce(mouseMove, 200)  // 调用函数
-  //debounce(mouseMove, 200)  = function () {2.3.4}
+    // box.addEventListener('mousemove', mouseMove)
+    box.addEventListener('mousemove', debounce(mouseMove, 500))
 
-</script>
+    //debounce(mouseMove, 200)  // 调用函数
+    //debounce(mouseMove, 200)  = function () {2.3.4}
+
+  </script>
 </body>
 
 </html>

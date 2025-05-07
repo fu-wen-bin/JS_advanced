@@ -11,10 +11,11 @@
 <body>
   <div></div>
   <script>
-    function getTime() {
+    function getTime () {
       document.querySelector('div').innerHTML = new Date().toLocaleString()
       setTimeout(getTime, 1000)
     }
+
     getTime()
   </script>
 </body>

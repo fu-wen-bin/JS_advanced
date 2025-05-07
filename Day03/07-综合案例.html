@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>面向对象封装消息提示</title>
   <style>
     .model {
@@ -75,7 +75,7 @@
 
   <script>
     // 1.  模态框的构造函数
-    function Model(title = '', message = '') {
+    function Model (title = '', message = '') {
       // 公共的属性部分
       this.title = title
       this.message = message
@@ -91,6 +91,7 @@
       `
       // console.log(this.modelBox)
     }
+
     // 2. 打开方法 挂载 到 模态框的 构造函数原型 身上
     Model.prototype.open = function () {
       if (!document.querySelector('.model')) {

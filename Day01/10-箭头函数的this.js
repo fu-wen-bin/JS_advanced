@@ -1,4 +1,3 @@
-
 // 1. 普通函数
 function fun () {
   console.log(this) //window
