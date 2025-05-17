@@ -21,7 +21,7 @@ const arr = [
 //   console.log(111)
 //   return item.name === '华为'
 // })
-// 1. find 查找
+// 1. find 查找  返回符合条件的对象
 const mi = arr.find(item => item.name === '小米')
 console.log(mi)
 // 2. every 每一个是否都符合条件，如果都符合返回 true ，否则返回false
