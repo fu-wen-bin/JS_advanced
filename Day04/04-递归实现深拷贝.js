@@ -35,6 +35,7 @@ console.log(o)
 o.age = 20
 o.hobby[0] = '篮球'
 o.family.baby = '老pink'
+console.log(o)
 console.log(obj)
 console.log([1, 23] instanceof Object)
 // 复习

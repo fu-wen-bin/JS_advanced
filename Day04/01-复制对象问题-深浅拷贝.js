@@ -23,4 +23,3 @@ const o2 = { ...obj }  // 浅拷贝 --改变对象基本属性对父类无影响
 o2.age = 30
 console.log(o2)
 console.log(obj)
-// 2. 深拷贝只拷贝地址
